@@ -1,13 +1,34 @@
 /* FONTS */
 
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Bold.woff2") format("woff2"),
+      url("../fonts/KumbhSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Regular.woff2") format("woff2"),
+      url("../fonts/KumbhSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CUSTOM PROPERTIES */
 
 :root {
-  --text-color: ;
-  --text-black-color: ;
-  --accent-color: ;
-  --outline-color: ;
-  --body-bg-color: ;
-  --footer-bg-color: ;
+  --text-color: #69707d;
+  --text-black-color: #1d2026;
+  --accent-color-orange: #ff7e1b;
+  --accent-color-light: #f6f8fd;
+  --orange-color-light: #ffeee2;
+  --linear-active: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  --linear-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  --accent-color-orange-hover:#ffab6a;
 }
 
 html {
@@ -28,11 +49,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Kumbh Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  background-color: var(--body-bg-color);
+  line-height: 26px;
+  background-color: #fff;
   color: var(--text-color);
 }
 
@@ -45,7 +66,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1150px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -68,22 +89,25 @@ img {
 /* BUTTON */
 
 .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   cursor: pointer;
   white-space: nowrap;
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  border: 0;
-  color: ;
-  border-radius: 28px;
-  background-color: ;
-  transition: ;
+  box-shadow: 0px 20px 50px -20px #FF7E1B;
+  border-radius: 10px;
+  color: #fff;
+  background-color: var(--accent-color-orange);
+  transition: background-color 0.4s ease, opacity 0.4s ease;
 }
 .button:hover {
-
+  background-color: var(--accent-color-orange-hover);
 }
 .button:active {
-
+  opacity: 0.6;
 }
 /* MAIN CONTENT */
 
