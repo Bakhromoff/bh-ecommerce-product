@@ -22,7 +22,7 @@
 
 :root {
   --text-color: #69707d;
-  --text-black-color: #1d2026;
+  --text-color-dark: #1d2026;
   --accent-color-orange: #ff7e1b;
   --accent-color-light: #f6f8fd;
   --orange-color-light: #ffeee2;
@@ -109,6 +109,117 @@ img {
 .button:active {
   opacity: 0.6;
 }
+
+/* SITE HEADER */
+
+.site-header {
+}
+
+.site-header__container {
+  border-bottom: 1px solid #e4e9f2;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
+}
+.site-header__logo {
+  margin-right: 57px;
+}
+.logo__img {
+  width: 138px;
+  height: 20px;
+  object-fit: contain;
+}
+.sitenav {
+}
+.site-header__sitenav {
+  margin-right: auto;
+}
+.sitenav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.sitenav__item {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 45px;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 32px;
+}
+.sitenav__link {
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--text-color);
+}
+.sitenav__link:hover {
+  color: var(--text-color-dark);
+}
+.sitenav__link:hover::after {
+  width: 100%;
+  content: "";
+  height: 4px;
+  background-color: var(--accent-color-orange);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.busket {
+  position: relative;
+}
+.site-header__busket {
+  margin-right: 46px;
+}
+.busket__link {
+  display: flex;
+  color: var(--text-color);
+}
+.busket__icon {
+}
+.busket__counter {
+  top: -6px;
+  left: calc(100% - 13px);
+  position: absolute;
+  padding: 3px 7px 0px;
+  background-color: var(--accent-color-orange);
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #fff;
+}
+.site-header__user-wrapper {
+
+}
+.site-header__user-link {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.site-header__user-link:hover {
+  border-color: var(--accent-color-orange);
+}
+.site-header__user-img {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
 /* MAIN CONTENT */
 
 .main {
