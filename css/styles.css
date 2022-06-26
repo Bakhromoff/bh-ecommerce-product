@@ -112,8 +112,6 @@ img {
 
 /* SITE HEADER */
 
-.site-header {
-}
 
 .site-header__container {
   border-bottom: 1px solid #e4e9f2;
@@ -179,13 +177,13 @@ img {
 }
 .site-header__busket {
   margin-right: 46px;
+  margin-left: 30px;
 }
 .busket__link {
   display: flex;
   color: var(--text-color);
 }
-.busket__icon {
-}
+
 .busket__counter {
   top: -6px;
   left: calc(100% - 13px);
@@ -198,15 +196,14 @@ img {
   line-height: 12px;
   color: #fff;
 }
-.site-header__user-wrapper {
 
-}
 .site-header__user-link {
   display: flex;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 2px solid transparent;
+  overflow: hidden;
 }
 .site-header__user-link:hover {
   border-color: var(--accent-color-orange);
@@ -215,7 +212,6 @@ img {
   object-fit: contain;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
 }
 
 
